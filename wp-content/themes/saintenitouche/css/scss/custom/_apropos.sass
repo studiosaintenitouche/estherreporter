@@ -1,0 +1,40 @@
+.apropos__container
+  display: block
+
+.apropos__title
+  color: #233142
+
+.apropos__image
+  width: 100%
+  display: block
+
+.apropos__content
+  width: 100%
+  display: block
+  position: relative
+
+.apropos__excerpt
+  color: #233142
+  width: 100%
+  font-size: 1em
+  line-height: 1.3em
+  padding-bottom: 1rem
+
+@media only screen and (min-width: 62rem)
+  .apropos__container
+    display: flex
+
+  .apropos__image, .apropos__content
+    width: 50%
+
+  .apropos__excerpt
+    margin: 0
+    transform: translateY(-50%)
+    padding-left: 1rem
+    padding-bottom: 0
+    font-size: 1.15em
+    position: absolute
+    top: 50%
+
+  .apropos__title
+    font-size: 2.5em

@@ -1,0 +1,96 @@
+.video__list
+  text-align: center
+  list-style: none
+  padding: 0
+
+.video__item
+  display: inline
+  padding-left: 5px
+  padding-right: 5px
+
+.video
+  overflow: hidden
+  padding-bottom: 56.25%
+  position: relative
+  height: 0
+  width: 100%
+  margin: 0 auto
+  font-size: 0
+
+iframe
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  position: absolute
+
+.video-btn
+  background: transparent
+  border: none
+  color: white
+  font-size: 2rem
+  z-index: 9999
+  cursor: pointer
+
+.video-btn--next
+  
+.video-buttons
+  display: flex
+  justify-content: space-between
+  max-width: 90vw
+  margin: 0 auto
+
+.slick-dots li button
+  line-height: 0
+  display: block
+  width: 20px
+  height: 20px
+  padding: 5px
+  cursor: pointer
+  color: transparent
+  border: 0
+  outline: none
+  background: transparent
+
+.slick-dots li 
+    position: relative
+    display: inline-block
+    width: 20px
+    height: 20px
+    margin: 0 5px
+    padding: 0
+    cursor: pointer
+
+.slick-dots 
+    position: absolute
+    bottom: -25px
+    display: block
+    width: 100%
+    padding: 0
+    margin: 0
+    list-style: none
+    text-align: center
+    transform: translateY(23px)
+
+.slick-dots li.slick-active button:before 
+    opacity: .75
+    color: white
+
+.slick-dots li button:before 
+    font-family: 'slick'
+    font-size: 20px
+    line-height: 20px
+    position: absolute
+    top: 0
+    left: 0
+    width: 20px
+    height: 20px
+    content: '•'
+    text-align: center
+    opacity: .25
+    color: white
+    -webkit-font-smoothing: antialiased
+
+@media only screen and (min-width: 62rem)
+  .video-buttons
+    justify-content: space-around
